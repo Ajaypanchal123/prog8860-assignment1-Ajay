@@ -1,13 +1,14 @@
 name: Node.js CI
 
-on: 
-  push:
-    branches: 
-    - feature/test-workflow
+# on: 
+#   push:
+#     branches: 
+#     - feature/test-workflow
 
-  # pull_request:
-    # branches:
-      # - main
+on:    
+  pull_request:
+    branches:
+      - main
 
 jobs:
   build:
